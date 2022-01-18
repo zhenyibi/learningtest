@@ -14,7 +14,7 @@ public class LinkedListDemo {
         linedList.add("hello");
         linedList.add("world");
         linedList.add("test");
-        
+
         for (String s : linedList) {
             System.out.println(s);
         }
