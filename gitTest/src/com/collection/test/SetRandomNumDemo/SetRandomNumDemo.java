@@ -21,7 +21,7 @@ public class SetRandomNumDemo {
         //创建Set集合对象无序
 //        Set<Integer> set = new HashSet<>();
 
-        //创建Set集合对象无序
+        //创建Set集合对象有序
         Set<Integer> set = new TreeSet<>();
 
         //创建随机数对象
