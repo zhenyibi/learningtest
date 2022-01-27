@@ -16,7 +16,7 @@ public class ArgsDemo {
     }
 
     /*
-    多个数据求和
+    可变参数多个数据求和
     public static int sum(int b, int... a) {
         int res = 0;
         for (int i : a) {
