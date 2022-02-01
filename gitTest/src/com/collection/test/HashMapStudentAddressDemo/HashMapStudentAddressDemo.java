@@ -1,4 +1,4 @@
-package HashMapStudentAddressDemo;
+package com.collection.test.HashMapStudentAddressDemo;
 
 /*
     需求：创建一个HashMap集合，键是学生对象（Student），值是居住地（String）。存储多个键值对对象，并遍历。

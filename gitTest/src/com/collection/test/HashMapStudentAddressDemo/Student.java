@@ -1,4 +1,4 @@
-package HashMapStudentAddressDemo;
+package com.collection.test.HashMapStudentAddressDemo;
 
 public class Student {
     private String name;
