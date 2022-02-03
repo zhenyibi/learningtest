@@ -1,4 +1,4 @@
-package com.File.test.FileConstructDemo;
+package com.File.test.FileDemo;
 
 /*
     File:文件和目录路径名的抽象表示
@@ -21,12 +21,12 @@ public class FileConstructDemo {
         System.out.println(f1);
 
         //File(String parent, String child) 从父路径名字符串和子路径名字符串创建新的File实例
-        File f2 = new File("E:\\itcast","java.txt");
+        File f2 = new File("E:\\itcast", "java.txt");
         System.out.println(f2);
 
         //File(File parent, String child) 从父抽象路径名和子路径名字符串创建新的File实例
         File f3 = new File("E:\\itcast");
-        File f4 = new File(f3,"java.txt");
+        File f4 = new File(f3, "java.txt");
         System.out.println(f4);
     }
 }
