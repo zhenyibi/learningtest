@@ -44,8 +44,8 @@ public class FileInputStreamDemo {
 
         //循环改进
         int by1;
-        while((by1 = fis.read()) != -1){
-            System.out.print((char)by1);
+        while ((by1 = fis.read()) != -1) {
+            System.out.print((char) by1);
         }
 
         //释放资源
