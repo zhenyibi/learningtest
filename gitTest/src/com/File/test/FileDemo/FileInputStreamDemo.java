@@ -12,6 +12,8 @@ package com.File.test.FileDemo;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 public class FileInputStreamDemo {
     public static void main(String[] args) throws IOException {
@@ -50,5 +52,18 @@ public class FileInputStreamDemo {
 
         //释放资源
         fis.close();
+
+        /*
+        一个汉字存储：
+            如果是GBK编码，占用两个字节；如果是UTF-8编码，占用3个字节
+         */
+        System.out.println("------");
+        String s = "中国";
+        byte[] bys = s.getBytes();  //[-28, -72, -83, -27, -101, -67]
+        System.out.println(Arrays.toString(bys));
+        byte[] bys1 = s.getBytes(StandardCharsets.UTF_8);  //[-28, -72, -83, -27, -101, -67]
+        System.out.println(Arrays.toString(bys1));
+        byte[] gbks = s.getBytes("GBK");  //[-42, -48, -71, -6]
+        System.out.println(Arrays.toString(gbks));
     }
 }
