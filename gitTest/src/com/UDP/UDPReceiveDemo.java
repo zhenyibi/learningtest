@@ -34,12 +34,12 @@ public class UDPReceiveDemo {
 
         //解析数据包，并把数据再控制台显示
         //byte[] getData () 返回数据缓冲区
-        byte[] datas = dp.getData();
+//        byte[] datas = dp.getData();
         //int getLength () 返回要发送的数据的长度或者接收到数据的长度
-        int len = dp.getLength();
+//        int len = dp.getLength();
 //        String dataString = new String(datas, 0, len);
 //        System.out.println("数据是：" + dataString);
-        System.out.println("数据是：" + new String(datas, 0, len));
+        System.out.println("数据是：" + new String(dp.getData(), 0, dp.getLength()));
 
         //关闭接收端
         ds.close();
