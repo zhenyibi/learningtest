@@ -24,13 +24,13 @@ public class SendDemo1 {
         //自己封装键盘录入数据
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line;
-        while((line = br.readLine())!=null) {
-            if("886".equals(line)) {
+        while ((line = br.readLine()) != null) {
+            if ("886".equals(line)) {
                 break;
             }
             //创建数据，并把数据打包
             byte[] bys = line.getBytes();
-            DatagramPacket dp = new DatagramPacket(bys, bys.length, InetAddress.getByName("192.168.1.4"),12345);
+            DatagramPacket dp = new DatagramPacket(bys, bys.length, InetAddress.getByName("192.168.1.4"), 12345);
 
             //调用DatagramPacket对象方法发送数据
             ds.send(dp);

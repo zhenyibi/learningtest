@@ -18,7 +18,7 @@ public class ReceiveDemo1 {
         //创建接收端的Socket对象
         DatagramSocket ds = new DatagramSocket(12345);
 
-        while(true) {
+        while (true) {
             //创建一个数据包用于接收数据
             byte[] bys = new byte[1024];
             DatagramPacket dp = new DatagramPacket(bys, bys.length);
