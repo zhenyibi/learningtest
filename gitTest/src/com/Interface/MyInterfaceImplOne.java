@@ -4,7 +4,7 @@ package com.Interface;
  * @author zhenyiBi
  * @date 2022/7/22
  */
-public class MyInterfaceImplOne implements MyInterface{
+public class MyInterfaceImplOne implements MyInterface {
     @Override
     public void show1() {
         System.out.println("One show1");
