@@ -13,6 +13,7 @@ public class InterDemo {
         Inter i = new InterImpl();
         i.show();
         i.method();
+        //静态方法只能被接口调用
         Inter.test();
 //        i.test();
         Flyable.test();
