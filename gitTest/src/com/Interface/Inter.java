@@ -11,7 +11,7 @@ public interface Inter {
         System.out.println("Inter中的默认方法执行了");
     }
 
-    public static void test() {
+    static void test() {
         System.out.println("Inter中的静态方法执行了");
     }
 }
